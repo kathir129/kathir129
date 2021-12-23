@@ -2,7 +2,6 @@ package org.flip;
 
 import java.util.Date;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -40,12 +39,6 @@ public class Flipkart extends BaseClass {
 				}
 	
 		}
-		// for (WebElement name : l.getnameList()) {
-		// System.out.println(name);
-		// for (WebElement price : l.getPricelist()) {
-		// System.out.println(price);
-		// }
-		// }
 	}
 
 	@AfterMethod
