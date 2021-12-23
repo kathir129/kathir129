@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19972" started-at="2021-12-23T18:34:56Z" finished-at="2021-12-23T18:35:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19972" started-at="2021-12-23T18:34:56Z" finished-at="2021-12-23T18:35:16Z">
+      <class name="org.flip.Flipkart">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.flip.Flipkart@598067a5]" name="beforeClass" is-config="true" duration-ms="10845" started-at="2021-12-23T18:34:56Z" finished-at="2021-12-23T18:35:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.flip.Flipkart@598067a5]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2021-12-23T18:35:07Z" finished-at="2021-12-23T18:35:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:org.flip.Flipkart@598067a5]" name="test" duration-ms="9056" started-at="2021-12-23T18:35:07Z" finished-at="2021-12-23T18:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.flip.Flipkart@598067a5]" name="afterMethod" is-config="true" duration-ms="3" started-at="2021-12-23T18:35:16Z" finished-at="2021-12-23T18:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.flip.Flipkart@598067a5]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-23T18:35:16Z" finished-at="2021-12-23T18:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- org.flip.Flipkart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
