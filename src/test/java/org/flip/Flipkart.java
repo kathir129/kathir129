@@ -1,7 +1,11 @@
 package org.flip;
 
 import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -19,7 +23,6 @@ public class Flipkart extends BaseClass {
 	@BeforeMethod
 	private void beforeMethod() {
 		System.out.println("Starts Time" + new Date());
-
 	}
 
 	@Test
@@ -29,15 +32,21 @@ public class Flipkart extends BaseClass {
 		click(l.getClose());
 		sendKeys(l.getSrc(), "iphone 12");
 		click(l.getBtnsrc());
-		for (int i = 0; i < l.getnameList().size(); ) {
-			for (int j = 0; j < l.getPricelist().size();j++ ) {
-				String list = l.getnameList().get(i).getText();
-				System.out.println(list);
-				String list1 = l.getPricelist().get(j).getText();
-				System.out.println(list1);
-				i++;
-				}
-	
+		Pricepage p = new Pricepage();
+		click(p.getLowtohigh());
+		Map<List<WebElement>,List<WebElement>> mp=new LinkedHashMap<List<WebElement>,List<WebElement>>();
+         List<WebElement> put = mp.put(l.getnameList(), l.getPricelist());
+		
+//		for (int i = 0; i < getSize(l.getnameList());) {
+//			for (int j = 0; j < getSize(l.getPricelist()); j++) {
+//			
+//				System.out.println(ListgetText(l.getnameList(), i));
+//				System.out.println(ListgetText(l.getPricelist(), j));
+//				i++;
+//			}
+//		}
+         for (int i = 0; i < put.size(); i++) {
+			System.out.println(ListgetText(put, i));
 		}
 	}
 
@@ -48,7 +57,7 @@ public class Flipkart extends BaseClass {
 
 	@AfterClass
 	private void afterClass() {
-
+		quit();
 	}
 
 }
