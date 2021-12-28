@@ -37,14 +37,6 @@ public class Flipkart extends BaseClass {
 		Map<List<WebElement>,List<WebElement>> mp=new LinkedHashMap<List<WebElement>,List<WebElement>>();
          List<WebElement> put = mp.put(l.getnameList(), l.getPricelist());
 		
-//		for (int i = 0; i < getSize(l.getnameList());) {
-//			for (int j = 0; j < getSize(l.getPricelist()); j++) {
-//			
-//				System.out.println(ListgetText(l.getnameList(), i));
-//				System.out.println(ListgetText(l.getPricelist(), j));
-//				i++;
-//			}
-//		}
          for (int i = 0; i < put.size(); i++) {
 			System.out.println(ListgetText(put, i));
 		}
