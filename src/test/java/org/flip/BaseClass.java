@@ -106,6 +106,21 @@ public class BaseClass {
 		return e.getAttribute("Value");
 	}
 
+	// getSize
+	public static Integer getSize(List<WebElement> e) {
+		return e.size();
+	}
+
+	// index
+	public static WebElement index(List<WebElement> e, int index) {
+		return e.get(index);
+	}
+
+	// ListgetText
+	public static String ListgetText(List<WebElement> e, int index) {
+		return e.get(index).getText();
+	}
+
 	// dragAnddrop
 	public static void dragAndDrop(WebElement from, WebElement to) {
 		Actions a = new Actions(driver);
@@ -329,6 +344,7 @@ public class BaseClass {
 		driver.switchTo().window(li.get(index));
 
 	}
+
 	// getExcelData
 	public static String getExcelData(String filename, String sheetname, int rowno, int cellno) throws IOException {
 		File loc = new File("C:\\Users\\MY PC\\eclipse-workspace\\Testmaven\\src\\test\\resources\\Screenshot\\Excel\\"
